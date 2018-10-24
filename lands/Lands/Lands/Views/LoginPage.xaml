@@ -65,6 +65,11 @@
                     Text="Forgot your password?"
                     TextColor="Blue">
                 </Label>
+                <Label
+                    HorizontalOptions="Center"
+                    Text="Forgot your password?"
+                    TextColor="Blue">
+                </Label>
 
                 <StackLayout
                 Margin="40,0">
