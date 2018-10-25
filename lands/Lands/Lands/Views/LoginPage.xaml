@@ -33,14 +33,13 @@
                     Grid.Row="0"
                     Grid.Column="1"
                     Keyboard="Email"
-                    Text="{Binding Email,Mode=TwoWay}"
+                    Text="{Binding Email,Mode=TwoWay}" 
                     Placeholder="Enter you email..">
                     </Entry>
                     <Label
                     Grid.Row="1"
-                    Grid.Column="0"
+                    Grid.Column="0" 
                     Text="Password"
-                        Text="{Binding Password, Mode=TwoWay}"
                     VerticalOptions="Center">
                     </Label>
                     <Entry
@@ -48,6 +47,7 @@
                     Grid.Column="1"
                     Placeholder="Enter you password.."
                     IsPassword="True"
+                    Text="{Binding Password, Mode=TwoWay}"
                     VerticalOptions="CenterAndExpand">
                     </Entry>
                 </Grid>
@@ -82,8 +82,9 @@
                     <Button
                 BackgroundColor="Navy"    
                 BorderRadius="23"
-                        Command="{Binding LoginCommand}"
+                Command="{Binding LoginCommand}"
                 HeightRequest="46"
+                IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
                 Text="Login"
                 TextColor="White">
                     </Button>
@@ -91,6 +92,7 @@
                 BackgroundColor="Green"    
                 BorderRadius="23"
                 HeightRequest="46"
+                IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
                 Text="REGISTER"
                 TextColor="White">
                     </Button>

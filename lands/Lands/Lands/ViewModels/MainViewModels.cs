@@ -1,7 +1,7 @@
-﻿
-namespace Lands.ViewModels
+﻿namespace Lands.ViewModels
 {
-	public class MainViewModel
+    using Xamarin.Forms;
+    public class MainViewModels
 	{
         #region ViewModels
         public LoginViewModel Login
@@ -9,10 +9,11 @@ namespace Lands.ViewModels
             get; set;
         }
         #endregion
-
-        public MainViewModel()
+        #region Constructors
+        public MainViewModels()
         {
             this.Login = new LoginViewModel();
         }
+        #endregion
     }
 }

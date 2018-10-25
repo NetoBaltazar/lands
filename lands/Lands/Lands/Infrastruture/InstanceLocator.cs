@@ -4,10 +4,9 @@ namespace Lands.Infrastruture
     using ViewModels;
     public class InstanceLocator
     {
-
         #region  Propertis
-       public MainViewModel Main
-        {
+       public MainViewModels Main
+       {
             get;
             set;
         }
@@ -16,7 +15,7 @@ namespace Lands.Infrastruture
         #region Contructor
         public InstanceLocator()
         {
-            this.Main = new MainViewModel();
+            this.Main = new MainViewModels();
         }
         #endregion
     }
